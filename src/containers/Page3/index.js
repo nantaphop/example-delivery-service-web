@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button2 from '../../components/Button2';
+import Button3 from '../../components/Button3';
 const StyledPage = styled.div`
   width: 100%;
   min-height: 500px;
@@ -9,6 +9,6 @@ const StyledPage = styled.div`
 export default () => (
   <StyledPage>
     Page 2
-    <Button2 text='Click Me' onClick={() => alert('btn2')} />
+    <Button3 text='Click Me' onClick={() => alert('btn2')} />
   </StyledPage>
 );

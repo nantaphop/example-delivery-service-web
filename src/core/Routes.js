@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import Page1 from '../containers/Page1';
 import Page2 from '../containers/Page2';
+import Page3 from '../containers/Page3';
 import Menu from './Menu';
 
 const Row = styled.div`
@@ -34,6 +35,9 @@ export default () => (
           </FullScreenRoute>
           <FullScreenRoute path='/page2'>
             <Page2 />
+          </FullScreenRoute>
+          <FullScreenRoute path='/page3'>
+            <Page3 />
           </FullScreenRoute>
         </StyledSwitch>
       </Row>

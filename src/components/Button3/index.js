@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
   padding: 16px;
-  background-color: lightblue;
+  background-color: green;
   border-radius: 8px;
 `;
 export default ({ text, onClick }) => {
@@ -12,6 +12,10 @@ export default ({ text, onClick }) => {
     setCount(count + 1);
     onClick();
   };
+  useEffect(() => {
+    const interval = setInterval(() => setCount(count + 1), 1000);
+    return () => clearInterval(interval);
+  });
   return (
     <StyledButton onClick={handleClick}>
       {text} Hook {count}
