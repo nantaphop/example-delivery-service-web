@@ -1,2 +1,2 @@
 import React from 'react';
-export default ({ text }) => <button>{text}</button>;
+export default ({ text, onClick }) => <button onClick={onClick}>{text}</button>;
