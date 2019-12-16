@@ -30,7 +30,7 @@ export default () => (
       <Row>
         <Menu />
         <StyledSwitch>
-          <FullScreenRoute path='/page1'>
+          <FullScreenRoute path='/page1/:id?'>
             <Page1 />
           </FullScreenRoute>
           <FullScreenRoute path='/page2'>
