@@ -1,14 +1,24 @@
+// Props Example
 import React from 'react';
-import styled from 'styled-components';
-import Button3 from '../../components/Button3';
-const StyledPage = styled.div`
-  width: 100%;
-  min-height: 500px;
-  background-color: pink;
-`;
+
+const Item1 = ({ title, subTitle, children }) => (
+  <div>
+    <b>{title}</b> {subTitle}
+    <pre>{children}</pre>
+  </div>
+);
+
 export default () => (
-  <StyledPage>
-    Page 2
-    <Button3 text='Click Me' onClick={() => alert('btn2')} />
-  </StyledPage>
+  <div>
+    <Item1 title='We can pass props' subTitle='to components' />
+    <Item1 title='It can be String' subTitle='like this' />
+    <Item1 title='Or a number' subTitle={555} />
+    <Item1
+      title='Or others'
+      subTitle={() => {
+        alert('Hi');
+      }}
+    />
+    <Item1 title='And'>I'm Children</Item1>
+  </div>
 );
