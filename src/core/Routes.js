@@ -15,6 +15,7 @@ import Page11 from '../containers/Page11';
 import Page12 from '../containers/Page12';
 import Page13 from '../containers/Page13';
 import Page14 from '../containers/Page14';
+import Page15 from '../containers/Page15';
 import Menu from './Menu';
 
 const routes = [
@@ -31,7 +32,8 @@ const routes = [
   Page11,
   Page12,
   Page13,
-  Page14
+  Page14,
+  Page15
 ];
 
 const Row = styled.div`

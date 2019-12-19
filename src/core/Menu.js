@@ -26,5 +26,6 @@ export default () => (
     <Link to='/12'>12. Request Http</Link>
     <Link to='/13'>13. Login and Store Token</Link>
     <Link to='/14'>14. Styled-Compoennts</Link>
+    <Link to='/15'>15. Basic Google Maps</Link>
   </Menu>
 );
